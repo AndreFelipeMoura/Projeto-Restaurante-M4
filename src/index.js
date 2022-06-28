@@ -3,9 +3,9 @@ const app = express()
 const port = 3000;
 app.use(express.json())
 
-import {garçom} from './controller/garcom-controller'
+import {garçom} from './controller/garcom-controller.js'
 garçom(app)
 
 app.listen(port, ()=>{
-    console.log("Ta rodando meu consagrado")
+    console.log("Rodando na porta 3000")
 })

@@ -5,5 +5,9 @@ import {GarçomDAO} from '../DAO/garcom-dao.js'
 export const garçom = (app) =>{
 const newGarcomDAO = new GarçomDAO(bd)
 
-    app.get("./garcom")
+    app.get("./garcom",(req, res)=>{
+        newGarcomDAO.listarGarcons()
+        .then((result)=>{res.send(result)})
+        .catch((error)=>{res.send(error)})
+    })
 }
