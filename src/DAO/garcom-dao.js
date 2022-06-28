@@ -1,4 +1,4 @@
-class GarçomDAO{
+export class GarçomDAO{
     constructor(bd){
         this.bd = bd
     }

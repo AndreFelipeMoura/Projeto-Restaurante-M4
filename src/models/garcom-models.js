@@ -1,4 +1,4 @@
-class Garçom{
+export class Garçom{
     constructor(nome, cpf, telefone, turno, praca, comissao){
         this.nome = nome;
         this.cpf = cpf;
