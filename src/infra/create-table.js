@@ -10,9 +10,11 @@ CREATE TABLE IF NOT EXISTS "GARÇOM"(
     "CPF" varchar(11),
     "TELEFONE" varchar(11),
     "TURNO" varchar(7),
-    "PRAÇA" tinyint,
-    "COMISSÃO" varchar(3)
+    "PRACA" tinyint,
+    "COMISSAO" varchar(3)
 )`
+
+
 
 function cria_tabela_garcom(){
     db.run(tabela_garcom, (error)=>{

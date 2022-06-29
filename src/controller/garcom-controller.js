@@ -10,4 +10,12 @@ const newGarcomDAO = new GarçomDAO(bd)
         .then((result)=>{res.send(result)})
         .catch((error)=>{res.send(error)})
     })
+
+    app.post("/garcom", (req, res)=>{
+        const body = req.body
+        const newGarcom = new Garçom(body.nome, body.cpf, body.telefone, body.turno, body.praca, body.comissao)
+        newGarcomDAO.inserirGarcom(newGarcom)
+        .then((result)=>{res.send(result)})
+        .catch((error)=>{res.send(error)})
+    })
 }
