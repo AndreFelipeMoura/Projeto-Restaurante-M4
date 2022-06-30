@@ -26,6 +26,18 @@ export class GarçomDAO{
         })
     }
 
+    atualizarGarcom(novaInsersao, id){
+        return new Promise((reject, resolve)=>{
+            this.bd.run("UPDATE GARÇOM SET NOME = ?, CPF = ?, TELEFONE = ?, TURNO = ?, PRACA = ?, COMISSAO = ? WHERE ID = ?", [novaInsersao, id], (error){
+                if(error){
+                    reject("Não foi possível atualizar o garçom")
+                }else{
+                    resolve("Garçom atualizado com sucesso")
+                }
+            })
+        })
+    }
+
     apagarGarcom(id){
         return new Promise((reject, resolve)=>{
             this.bd.run("DELETE FROM GARÇOM WHERE ID = ?", [id], (error)=>{
