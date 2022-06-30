@@ -5,17 +5,36 @@ import {GarçomDAO} from '../DAO/garcom-dao.js'
 export const garçom = (app) =>{
 const newGarcomDAO = new GarçomDAO(bd)
 
-    app.get("/garcom",(req, res)=>{
-        newGarcomDAO.listarGarcons()
-        .then((result)=>{res.send(result)})
-        .catch((error)=>{res.send(error)})
+    app.get("/garcom", async (req, res)=>{
+        try{
+            const garcom = await newGarcomDAO.listarGarcons()
+            res.send(garcom)
+        }
+        catch(error){
+            res.send(error)
+        }
     })
 
-    app.post("/garcom", (req, res)=>{
+    app.post("/garcom", async(req, res)=>{
         const body = req.body
         const newGarcom = new Garçom(body.nome, body.cpf, body.telefone, body.turno, body.praca, body.comissao)
-        newGarcomDAO.inserirGarcom(newGarcom)
-        .then((result)=>{res.send(result)})
-        .catch((error)=>{res.send(error)})
+        try{
+            const garcom = await newGarcomDAO.inserirGarcom(newGarcom)
+            res.send(garcom)
+        }
+        catch(error){
+            res.send(error)
+        }
+    })
+
+    app.delete("/garcom/:id", async(req, res)=>{
+        const id = req.params.id
+        try{
+            const garcom = await newGarcomDAO.apagarGarcom(id)
+            res.send(garcom)
+        }
+        catch(error){
+            res.send(error)
+        }
     })
 }
