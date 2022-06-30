@@ -15,6 +15,16 @@ const newGarcomDAO = new GarçomDAO(bd)
         }
     })
 
+    app.get("/garcom/:id", async(req, res)=>{
+        try{
+            const garcom = await newGarcomDAO.selectGarcomEspecifico(req.params.id)
+            res.send(garcom)
+        }
+        catch(error){
+            res.send(error)
+        }
+    })
+
     app.post("/garcom", async(req, res)=>{
         const body = req.body
         const newGarcom = new Garçom(body.nome, body.cpf, body.telefone, body.turno, body.praca, body.comissao)
@@ -25,6 +35,10 @@ const newGarcomDAO = new GarçomDAO(bd)
         catch(error){
             res.send(error)
         }
+    })
+
+    app.put("/garcom/:id", async(req, res)=>{
+
     })
 
     app.delete("/garcom/:id", async(req, res)=>{
