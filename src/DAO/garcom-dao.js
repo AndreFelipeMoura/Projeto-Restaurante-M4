@@ -3,7 +3,7 @@ export class GarçomDAO{
         this.bd = bd
     }
     listarGarcons(){
-        return new Promise((reject, resolve)=>{
+        return new Promise((resolve, reject)=>{
             this.bd.all("SELECT * FROM GARÇOM", (error, result)=>{
                 if(error){
                     reject("Erro ao listar garçons.")
@@ -15,7 +15,7 @@ export class GarçomDAO{
     }
 
     selectGarcomEspecifico(id){
-        return new Promise((reject, resolve)=>{
+        return new Promise((resolve, reject)=>{
             this.bd.all("SELECT * FROM GARÇOM WHERE ID = ?", [id], (error, result)=>{
                 if(error){
                     reject("Erro ao listar garçons.")
@@ -27,7 +27,7 @@ export class GarçomDAO{
     }
 
     inserirGarcom(novaInsersao){
-        return new Promise((reject, resolve)=>{
+        return new Promise((resolve, reject)=>{
             this.bd.run("INSERT INTO GARÇOM (nome, cpf, telefone, turno, praca, comissao) VALUES(?, ?, ?, ?, ?, ?)", [novaInsersao.nome, novaInsersao.cpf, novaInsersao.telefone, novaInsersao.turno, novaInsersao.praca, novaInsersao.comissao], (error)=>{
                 if(error){
                     reject("Erro ao inserir garçom")
@@ -39,8 +39,8 @@ export class GarçomDAO{
     }
 
     atualizarGarcom(novaInsersao, id){
-        return new Promise((reject, resolve)=>{
-            this.bd.run("UPDATE GARÇOM SET NOME = ?, CPF = ?, TELEFONE = ?, TURNO = ?, PRACA = ?, COMISSAO = ? WHERE ID = ?", [novaInsersao, id], (error)=>{
+        return new Promise((resolve, reject)=>{
+            this.bd.run("UPDATE GARÇOM SET NOME = ?, CPF = ?, TELEFONE = ?, TURNO = ?, PRACA = ?, COMISSAO = ? WHERE ID = ?", [novaInsersao.nome, novaInsersao.cpf, novaInsersao.telefone, novaInsersao.turno, novaInsersao.praca, novaInsersao.comissao, id], (error)=>{
                 if(error){
                     reject("Não foi possível atualizar o garçom")
                 }else{
@@ -51,7 +51,7 @@ export class GarçomDAO{
     }
 
     apagarGarcom(id){
-        return new Promise((reject, resolve)=>{
+        return new Promise((resolve, reject)=>{
             this.bd.run("DELETE FROM GARÇOM WHERE ID = ?", [id], (error)=>{
                 if(error){
                     reject("Erro ao apagar garçom")
