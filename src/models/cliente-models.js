@@ -1,4 +1,4 @@
-class clientemodels{
+export class ClienteModels{
     constructor(id, nome, cpf, email, mesa){
         this.id = id;
         this.nome = nome;
