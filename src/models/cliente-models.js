@@ -1,6 +1,6 @@
 export class ClienteModels{
-    constructor(id, nome, cpf, email, mesa){
-        this.id = id;
+    constructor( nome, cpf, email, mesa){
+        
         this.nome = nome;
         this.cpf = cpf;
         this.email = email;
