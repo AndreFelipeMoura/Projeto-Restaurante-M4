@@ -85,3 +85,24 @@ Aqui você verá todas as dependências que precisam ser instaladas para o funci
 <li> Node.Js
 <li> JavaScript
 </ul>
+
+<h2>Autores</h2>
+<h3>Orlando Bernardi</h3>
+<p>Co-Facilitador. Responsável pela entidade Cliente</p>
+<img src='https://media.discordapp.net/attachments/490909335468245002/994652656951885875/unknown.png?width=670&height=670' width="200px" height="200px"><br>
+<a href="https://www.linkedin.com/in/orlandobernardi/"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a>
+
+<h3>João Pedro</h3>
+<p>Gestor de Conhecimento. Responsável pela entidade Cozinha</p>
+<img src='https://media.discordapp.net/attachments/490909335468245002/994653265977417828/unknown.png' width="200px" height="200px"><br>
+<a href="https://www.linkedin.com/in/jo%C3%A3o-pedro-5536521a2/"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a>
+
+<h3>Gustavo Arcoverde</h3>
+<p>Gestor de Gente e Engajamento. Responsável pela entidade Garçom</p>
+<img src='https://media.discordapp.net/attachments/490909335468245002/994653641485066300/unknown.png?width=670&height=670' width="200px" height="200px"><br>
+<a href="https://www.linkedin.com/in/gustavo-arcoverde/"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a>
+
+<h3>André Moura</h3>
+<p>Colaborador. Responsável pela entidade Cardápio</p>
+<img src='https://media.discordapp.net/attachments/490909335468245002/994653861023330374/unknown.png?width=670&height=670' width="200px" height="200px"><br>
+<a href="https://www.linkedin.com/in/andrefelipemoura/"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a>
