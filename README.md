@@ -71,3 +71,9 @@ Aqui você verá todas as dependências que precisam ser instaladas para o funci
 <p>Depois disso, você deve passar, no corpo da requisição, as linhas que você pretende alterar, por exemplo:</p>
 <img src='https://media.discordapp.net/attachments/490909335468245002/994645182228217946/unknown.png'>
 <p>Depois de apertar "Send", como resultado, aparecerá no lado direito a mensagem "Garçom atualizado com sucesso". Você pode verificar isso na rota Get.</p>
+
+
+<h3>Delete</h3>
+<p>A rota delete irá excluir um registro existente. Nesse caso, você irá passar um número no caminho, um id, assim como na rota Put:</p>
+<img src='https://media.discordapp.net/attachments/490909335468245002/994646434282491924/unknown.png'>
+<p>Depois de apertar "Send", como resultado, aparecerá "Garçom apagado com sucesso". Você pode verificar isso na rota Get.</p>
