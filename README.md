@@ -34,3 +34,17 @@ Aqui você verá todas as dependências que precisam ser instaladas para o funci
 <p>Com o SQLite3, poderemos usar bancos de dados relacionais mais simples em nossa API e, com isso, usufruir das tabelas do arquivo database.db. É bem simples:</p>
 1. No seu terminal, digite o comando: npm install sqlite3, para instalar o SQLite3.<br>
 2. Pronto, o SQLite3 já está baixado e todas as instâncias do mesmo estão funcionando.
+
+<h2 id='rotas'>Rotas</h2>
+<p>Nossa API tem quatro entidades, sendo elas Cozinha, Cardápio, Garçom e Clientes, que podem ser acessados pelo caminho, digitando: localhost:3000/nomeDaEntidade. </p>
+<img src="https://media.discordapp.net/attachments/490909335468245002/994638111424389261/unknown.png">
+<p>Nessas entidades, podemos usar quatro rotas (operações que executamos na nossa API), sendo elas:</p>
+<ul>
+<li>GET
+<li>POST 
+<li>PUT 
+<li>DELETE 
+</ul>
+
+<p>Você pode selecionar sua rota por aqui (A rota PATCH não está disponível):<p>
+<img src='https://media.discordapp.net/attachments/490909335468245002/994639530839773215/unknown.png'>
