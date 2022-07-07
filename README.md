@@ -63,3 +63,11 @@ Aqui você verá todas as dependências que precisam ser instaladas para o funci
 <p>E irá escrever no lado esquerdo o que você deseja adicionar como objeto ao banco, seguindo a seguinte estrutura (onde está escrito "String", você vai escrever algo entre aspas, e onde está Number, você colocará um número inteiro):</p>
 <img src='https://media.discordapp.net/attachments/490909335468245002/994642450108915772/unknown.png'>
 <p>Como resultado, aparecerá no lado direito a mensagem "Garçom inserido com sucesso"</p>
+
+<h3>Put</h3>
+<p>A rota put irá atualizar um registro existente. Nesse caso, você irá passar um número no caminho, ao chamar a rota no Insomnia, da seguinte maneira:</p>
+<img src='https://media.discordapp.net/attachments/490909335468245002/994644439375020052/unknown.png'><br>
+<small>Esse id será o número do id de um dos objetos já existentes, que você pode verificar usando o método Get.</small>
+<p>Depois disso, você deve passar, no corpo da requisição, as linhas que você pretende alterar, por exemplo:</p>
+<img src='https://media.discordapp.net/attachments/490909335468245002/994645182228217946/unknown.png'>
+<p>Depois de apertar "Send", como resultado, aparecerá no lado direito a mensagem "Garçom atualizado com sucesso". Você pode verificar isso na rota Get.</p>
