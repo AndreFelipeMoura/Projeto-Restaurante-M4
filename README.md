@@ -77,3 +77,11 @@ Aqui você verá todas as dependências que precisam ser instaladas para o funci
 <p>A rota delete irá excluir um registro existente. Nesse caso, você irá passar um número no caminho, um id, assim como na rota Put:</p>
 <img src='https://media.discordapp.net/attachments/490909335468245002/994646434282491924/unknown.png'>
 <p>Depois de apertar "Send", como resultado, aparecerá "Garçom apagado com sucesso". Você pode verificar isso na rota Get.</p>
+
+<h2 id='tech'>Tecnologias Utilizadas</h2>
+<ul>
+<li> VS Code
+<li> Insomnia
+<li> Node.Js
+<li> JavaScript
+</ul>
