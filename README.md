@@ -48,3 +48,11 @@ Aqui você verá todas as dependências que precisam ser instaladas para o funci
 
 <p>Você pode selecionar sua rota por aqui (A rota PATCH não está disponível):<p>
 <img src='https://media.discordapp.net/attachments/490909335468245002/994639530839773215/unknown.png'>
+
+<h2 id='usandoRotas'>Usando Rotas</h2>
+<h3>Get</h3>
+<p>A rota Get vai listar todos os registros no nosso banco de dados, em ordem. Para isso, usamos:</p>
+<img src='https://media.discordapp.net/attachments/490909335468245002/994640892050817084/unknown.png'>
+
+<p>O resultado esperado é:</p>
+<img src='https://media.discordapp.net/attachments/490909335468245002/994641136956223618/unknown.png?width=714&height=670' width=600>
