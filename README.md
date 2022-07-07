@@ -54,5 +54,12 @@ Aqui você verá todas as dependências que precisam ser instaladas para o funci
 <p>A rota Get vai listar todos os registros no nosso banco de dados, em ordem. Para isso, usamos:</p>
 <img src='https://media.discordapp.net/attachments/490909335468245002/994640892050817084/unknown.png'>
 
-<p>O resultado esperado é:</p>
+<p>O resultado esperado a aparecer no lado direito é:</p>
 <img src='https://media.discordapp.net/attachments/490909335468245002/994641136956223618/unknown.png?width=714&height=670' width=600>
+
+<h3>Post</h3>
+<p>A rota post irá inserir um novo registro no banco de dados. Pra usá-la, você irá selecionar a rota post:</p>
+<img src='https://media.discordapp.net/attachments/490909335468245002/994642000483721216/unknown.png'>
+<p>E irá escrever no lado esquerdo o que você deseja adicionar como objeto ao banco, seguindo a seguinte estrutura (onde está escrito "String", você vai escrever algo entre aspas, e onde está Number, você colocará um número inteiro):</p>
+<img src='https://media.discordapp.net/attachments/490909335468245002/994642450108915772/unknown.png'>
+<p>Como resultado, aparecerá no lado direito a mensagem "Garçom inserido com sucesso"</p>
