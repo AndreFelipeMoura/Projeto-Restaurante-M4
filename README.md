@@ -7,6 +7,7 @@
 <!--ts-->
 * [Sobre](#sobre)
 * [Instalação](#instalacao)
+* [Executando](#execute)
 * [Rotas](#rotas)
 * [Usando as Rotas](#usandoRotas)
 * [Tecnologias utilizadas](#tech)
@@ -34,6 +35,9 @@ Aqui você verá todas as dependências que precisam ser instaladas para o funci
 <p>Com o SQLite3, poderemos usar bancos de dados relacionais mais simples em nossa API e, com isso, usufruir das tabelas do arquivo database.db. É bem simples:</p>
 1. No seu terminal, digite o comando: npm install sqlite3, para instalar o SQLite3.<br>
 2. Pronto, o SQLite3 já está baixado e todas as instâncias do mesmo estão funcionando.
+
+<h2 id='execute'>Executando</h2>
+<p>Para executar esta API, você deve abrir seu terminal no VSCode e executar o comando "node ./src/index.js". Certifique-se que você está na pasta "Projeto-Restaurante-M4". Caso não esteja, você pode usar o comando 'cd' em conjunto com a tecla tab para navegar pelos caminhos e encontrar a pasta Projeto-Restaurante-M4.
 
 <h2 id='rotas'>Rotas</h2>
 <p>Nossa API tem quatro entidades, sendo elas Cozinha, Cardápio, Garçom e Clientes, que podem ser acessados pelo caminho, digitando: localhost:3000/nomeDaEntidade. </p>
