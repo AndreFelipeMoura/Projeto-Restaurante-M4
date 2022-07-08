@@ -1,6 +1,7 @@
 import {db} from "./infra/create-table.js"
 import {clientes} from "./controllers/cliente-controller.js"
 import {garçom} from './controller/garcom-controller.js'
+import {cardapio} from './controllers/cardapio-controller'
 import express from 'express'
 const app = express()
 const port = 3000;
