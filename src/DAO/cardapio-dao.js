@@ -54,6 +54,21 @@ class cardapioDAO {
         })
 
     }
+
+    deleteCardapio(id) {
+        return new Promise((resolve, reject) => {
+            this.bd.run(`DELETE FROM CARDAPIO WHERE id = ${id}`, (error) => {
+                if (error) {
+                    reject(error);
+                } else {
+                    resolve("DELETADO COM SUCESSO!")
+                }
+            })
+        })
+
+
+    }
+
 }
 
 module.exports = cardapioDAO;

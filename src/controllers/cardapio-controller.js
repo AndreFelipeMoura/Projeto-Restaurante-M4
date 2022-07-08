@@ -19,7 +19,7 @@ const cardapio = (app, bdsqlite) => {
 
     })
 
-    app.get('/cardapio/:id', (req, res) => {        
+    app.get('/cardapio/:id', (req, res) => {
         const data = async () => {
             try {
                 const cardapio = await DAOcardapio.listarCardapioID(req.params.id);
@@ -52,8 +52,8 @@ const cardapio = (app, bdsqlite) => {
         const data = async () => {
             try {
                 const itemAntigo = await DAOcardapio.listarCardapioID(id)
-                const NovoItemAtualizado = new
-                Cardapio(
+                const NovoItemAtualizado = new Cardapio
+                (
                     body.ingredientes || itemAntigo.ingredientes[0],
                     body.pratos || itemAntigo.pratos[0],
                     body.bebidas || itemAntigo.bebidas[0],
@@ -65,6 +65,18 @@ const cardapio = (app, bdsqlite) => {
                 res.status(200).json(cardapio)
             } catch (error) {
                 res.status(404).json(error)
+            }
+        }
+        data();
+    })
+
+    app.delete('/cardapio/:id', (req, res) => {
+        const data = async () => {
+            try {
+                const cardapio = await DAOcardapio.deleteCardapio(req.params.id);
+                res.status(201).json(cardapio)
+            } catch (error) {
+                res.status(200).json(error)
             }
         }
         data();
