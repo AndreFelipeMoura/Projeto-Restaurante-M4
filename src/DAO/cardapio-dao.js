@@ -37,6 +37,23 @@ class cardapioDAO {
         })
 
     }
+
+    alterarCardapio(Parametros, id) {
+        return new Promise((resolve, reject) => {
+            this.bd.run(`
+            UPDATE CARDAPIO
+        SET ingredientes = ?, pratos = ?, bebidas = ?, preco = ?, numvendas = ?`,
+                [Parametros, id], (error) => {
+                    if (error) {
+                        console.log(error)
+                        reject(error);
+                    } else {
+                        resolve("ALTERADO COM SUCESSO!")
+                    }
+                })
+        })
+
+    }
 }
 
 module.exports = cardapioDAO;
