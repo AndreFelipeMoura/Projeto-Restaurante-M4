@@ -1,8 +1,10 @@
-const Cardapio = require('../models/cardapio-models');
-const cardapioDAO = require('../DAO/cardapio-dao');
+import { cardapio } from '../models/cardapio-models'
+import { bd } from '../infra/sqlite-bd'
+import { cardapioDAO } from '../DAO/cardapio-dao'
 
-const cardapio = (app, bdsqlite) => {
-    const DAOcardapio = new cardapioDAO(bdsqlite);
+
+export const cardapio = (app) => {
+    const DAOcardapio = new cardapioDAO(bd);
 
     app.get('/cardapio', (req, res) => {
         const data = async () => {
