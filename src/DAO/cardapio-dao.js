@@ -1,4 +1,4 @@
-class cardapioDAO {
+export class cardapioDAO {
 
     construcotr(bd) {
         this.bd = bd;
@@ -8,9 +8,7 @@ class cardapioDAO {
         return new Promise((resolve, reject) => {
             this.bd.all(`SELECT * FROM CARDAPIO`, (error, resultado) => {
                 if (error) reject(error);
-                else resolve(resultado)
-                //     if (error) res.status(404).json(error);
-                // else res.status(200).json(resultado)
+                else resolve(resultado)            
             })
         })
     }
@@ -54,6 +52,21 @@ class cardapioDAO {
         })
 
     }
+
+    deleteCardapio(id) {
+        return new Promise((resolve, reject) => {
+            this.bd.run(`DELETE FROM CARDAPIO WHERE id = ${id}`, (error) => {
+                if (error) {
+                    reject(error);
+                } else {
+                    resolve("DELETADO COM SUCESSO!")
+                }
+            })
+        })
+
+
+    }
+
 }
 
 module.exports = cardapioDAO;
