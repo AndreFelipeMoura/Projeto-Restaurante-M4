@@ -16,7 +16,7 @@ export class ClienteDAO{
     }
     async inserirClientes(cliente){
         return new Promise((resolve, reject) => {
-            this.bd.run("INSERT INTO clientes (id, nome, cpf, email, mesa) values (?, ?, ?, ?, ?)", [cliente.id, cliente.nome, cliente.cpf,cliente.email, cliente.mesa], (error)=>{
+            this.bd.run("INSERT INTO clientes (nome, cpf, email, mesa) values (?, ?, ?, ?, ?)", [cliente.nome, cliente.cpf,cliente.email, cliente.mesa], (error)=>{
                 if (error){
                     reject(error)
                 }else{
