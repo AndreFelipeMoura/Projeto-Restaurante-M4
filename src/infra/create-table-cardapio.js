@@ -1,5 +1,5 @@
-const sqlite3 = require('sqlite3').verbose();
-const db = new sqlite3.Database('./src/infra/database.db');
+import * as sqlite3 from 'sqlite3'
+export const db = new sqlite3.default.Database('./src/infra/database.db');
 
 const CREATE = `
 CREATE TABLE IF NOT EXISTS "CARDAPIO"(
