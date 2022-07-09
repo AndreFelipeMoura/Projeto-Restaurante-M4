@@ -9,7 +9,6 @@ app.use(express.json())
 
 garçom(app)
 clientes(app, db)
-
 app.listen(port, ()=>{
     console.log("funcionando")
 })

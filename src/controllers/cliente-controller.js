@@ -15,7 +15,7 @@ export  const clientes = (app, db) => {
     })
     app.post("/clientes",async(req,res)=>{
         const body = req.body
-        const novoCliente = new ClienteModels(body.id, body.nome, body.cpf, body.email, body.mesa)
+        const novoCliente = new ClienteModels( body.nome, body.cpf, body.email, body.mesa)
         try {
             await DAO.inserirClientes(novoCliente)
             res.send("deu certo")
